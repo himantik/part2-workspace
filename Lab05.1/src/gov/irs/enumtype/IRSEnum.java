@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import gov.irs.TaxPayer;
 
-public enum IRSEnum {
+ enum IRSEnum implements IRS {
   INSTANCE;
   
   // BUSINESS CODE
@@ -23,7 +23,8 @@ public enum IRSEnum {
       payer.payTaxes();
     }
   }
-  
+
+  @Override
   public void register(TaxPayer payer) {
     payers.add(payer);
   }

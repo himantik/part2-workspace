@@ -28,7 +28,13 @@ public class Catalog {
    * A no-matches result should be an empty collection (not null).
    */
   public static Collection<Television> findByBrand(String brand) {
-    return null;
+    Collection<Television> result = new ArrayList<>();
+    for (Television tv : catalog){
+      if (tv.getBrand().equals(brand)){
+        result.add(tv);
+      }
+    }
+    return result;
   }
   
   /**

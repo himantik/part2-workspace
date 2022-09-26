@@ -11,5 +11,6 @@
     <orderEntry type="library" name="lib" level="project" />
     <orderEntry type="module" module-name="test" />
     <orderEntry type="module" module-name="main" />
+    <orderEntry type="library" scope="TEST" name="junit4" level="application" />
   </component>
 </module>
