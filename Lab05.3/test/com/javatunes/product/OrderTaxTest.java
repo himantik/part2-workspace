@@ -46,6 +46,13 @@ public class OrderTaxTest {
    */
   @Test
   public void testTaxOnlineOrder() {
+    Order order1 = new Order("online-1", Location.ONLINE);
+    order1.processCart(cart1);
+    assertEquals(0, order1.processCart(cart1));
+    Order order2 = new Order("online-2", Location.ONLINE);
+    order1.processCart(cart2);
+    assertEquals(0, order1.processCart(cart2));
+
 
   }
   

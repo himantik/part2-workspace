@@ -19,6 +19,7 @@ implements Runnable {
         Thread.sleep(1000);
       }
       catch (InterruptedException e) {
+        // ignore this exception; get on with life.
       }
     }
   }
