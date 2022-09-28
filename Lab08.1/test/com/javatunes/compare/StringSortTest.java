@@ -25,7 +25,7 @@ public class StringSortTest {
     names.sort(null);
     System.out.println(names + "\n");
     
-    System.out.println("Increasing length - Comparator class:");
+    System.out.println("Decreasing length - Comparator class:");
     names.sort(new StringLengthComparator());
     System.out.println(names + "\n");
     
@@ -33,5 +33,7 @@ public class StringSortTest {
     // TODO: call names.sort() and pass in an "expression" lambda
     // hint: a compatible lambda will have this form:
     //       (obj1, obj2) -> expression-that-evaluates-to-int
+    names.sort((str1, str2) -> str1.length() - str2.length());
+    System.out.println(names);
   }
 }
